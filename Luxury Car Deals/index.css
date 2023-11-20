@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font: 16px/28px;
+}
+body {
+  color: #fff;
+  background-color: #000;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s;
+}
+ul li {
+  list-style: none;
+}
+.btn_main {
+  padding: 12px 24px;
+  background-color: #ee8313;
+  font-weight: 600;
+}
+.btn_main:hover {
+  background-color: #e0a40f;
+}
+.title_main {
+  font-size: 52px;
+  line-height: 64px;
+  margin-bottom: 40px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+.btn-secondary {
+  padding: 12px 24px;
+  font-weight: 600;
+  border: 1px solid #ee8313;
+  color: #ee8313;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* header */
+#header-section {
+  padding: 40px 0 107px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.header-logo__img {
+  width: 48px;
+  height: 48px;
+}
+.nav-main {
+  margin-left: auto;
+}
+.nav-main_list {
+  display: flex;
+  margin-right: 72px;
+  gap: 48px;
+}
+.nav-main_link:hover {
+  color: #ee8313;
+}
+
+/* main */
+.banner-section {
+  padding-bottom: 60px;
+  overflow: hidden;
+  position: relative;
+}
+.banner {
+  max-width: 475px;
+  padding-top: 45px;
+}
+.banner_header {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.6px;
+}
+.banner_scr {
+  margin: 32px 0 48px;
+  font-size: 17px;
+  color: rgb(255 255 255/ 80%);
+}
+.banner_links-wrap {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+.banner_features {
+}
+.banner_features__text {
+  font-weight: 600;
+  line-height: 24px;
+}
+.banner_features__text_strong {
+  margin-right: 16px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  vertical-align: sub;
+}
+.banner_features__text:first-child {
+  margin-right: 40px;
+}
+.banner_img {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.banner_img::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  width: 96%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: url(img/cars.svg) no-repeat;
+}
+.banner_img::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 80%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgb(52 52 52/ 30%);
+}
+
+/* rent */
+
+.rent-section {
+  padding: 120px 0 120px;
+}
+.rent-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.rent {
+  position: relative;
+  height: 524px;
+  font-weight: 600;
+  background: url(img/Mask6.png) 50% / cover no-repeat;
+}
+.rent:nth-child(2) {
+  background-image: url(img/Mask7.svg);
+}
+.rent:nth-child(3) {
+  background-image: url(img/Mask2.svg);
+}
+.rent:nth-child(4) {
+  background-image: url(img/Mask4.png);
+}
+.rent_name {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  font-size: 40px;
+  letter-spacing: 0.6px;
+}
+.rent_link {
+  position: absolute;
+  bottom: 48px;
+  right: 60px;
+  padding-right: 30px;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+}
+.rent_link:hover {
+  color: #e0a40f;
+}
+.rent_link::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0px;
+  width: 8px;
+  height: 16px;
+  background: url(img/Frame\ 20.svg) 50% / cover no-repeat;
+  transform: translateY(-50%);
+}
+
+/* services */
+
+.services-section {
+  padding-bottom: 120px;
+}
+.services-section__title {
+  margin-bottom: 66px;
+  text-align: left;
+}
+.services-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.services_img {
+  margin-bottom: 24px;
+}
+.services__title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
+}
+.services__text {
+  color: rgb(255 255 255/ 80%);
+}
+/* detination */
+
+.detination_section {
+  padding-bottom: 162px;
+}
+.detination_title {
+  width: 590px;
+  margin: 0 auto 40px;
+}
+.detination-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.detination {
+  background-color: #131313;
+  border: 1px solid #171717;
+}
+.detination_info {
+  padding: 24px;
+}
+.detination__title {
+  font-size: 24px;
+  line-height: 32px;
+}
+.detination_scr {
+  margin: 10px 0 25px;
+  color: rgb(255 255 255/ 80%);
+}
+.detination_price {
+  position: relative;
+  display: block;
+  font-weight: 600;
+  padding-left: 42px;
+  margin-bottom: 17px;
+}
+.detination_price:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: url(img/Car.svg) no-repeat;
+  transform: translateY(-50%);
+}
+.detination_link {
+  color: #ee8313;
+}
+.detination_link:hover {
+  color: #e0a40f;
+}
+/* Location */
+
+.location {
+  padding-bottom: 102px;
+}
+
+/* foother */
+.footer-section {
+  padding-top: 40px;
+  background-color: #1f1905;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+}
+.footer-loto-wrap {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 64px;
+  font-weight: 600;
+}
+.footer_img {
+  width: 48px;
+  height: 48px;
+}
+.footer-about__text {
+  max-width: 235px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.footer-nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  margin: 40px 100px 0 auto;
+}
+.footer-nav__header {
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.footer-nav__item {
+  margin-bottom: 28px;
+  line-height: 20px;
+}
+.footer-nav_link {
+  color: rgb(255 255 255/ 80%);
+}
+.footer-nav_link:hover {
+  color: #e0a40f;
+}
+.foother-social_link {
+  display: flex;
+
+  width: 120px;
+  height: 30px;
+  margin-bottom: 50px;
+  background: url(img/social_1.svg) 50% / cover no-repeat;
+}
+.foother-social_link:nth-child(2) {
+  background-image: url(img/social_2.svg);
+}
+.foother-social_link:nth-child(3) {
+  background-image: url(img/social_3.svg);
+}
+.foother-copyright {
+  background-color: #ee8313;
+  padding: 20px 0;
+}
+.footer-coperight_text {
+  text-align: center;
+}
+.foother-social {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
